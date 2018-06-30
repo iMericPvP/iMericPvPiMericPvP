@@ -59,6 +59,38 @@ client.on('message', async message => {
 }
 });
 
+client.on('message', message => {
+     if (message.author.bot) return;
+       if (message.content ===  "+help") {
+ message.channel.send('**تم ارسال الاومر في الخاص|| Done Enter Command In Box :D**')
+message.author.sendMessage(`
+༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻
+:earth_africa: الاوامــر الــعـــامـــة:earth_africa: 
+1༺༻  +id  | لعرض معلومات الشخص༺༻
+2༺༻  +info | لعرض معلومات عن البوت༺༻
+3༺༻  +server | لعرض معلومات السيرفر༺༻
+4༺༻  +ping | لعرض بنق البوت༺༻
+5༺༻  +date | لعرض التاريخ༺༻
+6༺༻ +invite | لدعوة البوت الى سيرفرك༺༻
+7༺༻  +invites | لعرض عدد الانفايت التي تمتلكه༺༻
+8༺༻  +avatar | لعرض صورة الشخص༺༻
+9༺༻ +color | لاختيار لونك༺༻
+:closed_lock_with_key: اوامـــر الادمـــنـــيــــة:closed_lock_with_key: 
+1༺༻  +clear | لمسح الشات༺༻
+2༺༻  +bc | لارسال رسالة لجميع الاعضاء༺༻
+3༺༻  +kick | لطرد العضو من السيرفر༺༻
+4༺༻  +ban | لاعطاء باند لشخص༺༻
+:speech_balloon: الالـــعـــاب:speech_balloon: 
+1༺༻  +زواج ༺༻
+2༺༻  +حجرة༺༻
+3༺༻  +عقاب༺༻
+4༺༻ +لو خيروك༺༻
+༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻
+   `);
+       }
+});
+
+
 
 
 
