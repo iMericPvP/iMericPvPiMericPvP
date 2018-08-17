@@ -4,7 +4,7 @@ const prefix = '/'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`/help | /invite `,"http://twitch.tv/NoobBot")
+client.user.setGame(`/help | /invite | ${client.guilds.size} `,"http://twitch.tv/NoobBot")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
